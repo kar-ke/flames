@@ -100,7 +100,7 @@ const Home = () => {
                   <input type='text' value={formdata.name1}  name='name1' placeholder='un peru' onChange={handleChange} className='hover: outline outline-1 outline-gray-400 rounded-3xl w-full mx-4 px-4 py-2' required />
                   <input type='text' value={formdata.name2} name='name2' placeholder='un aal peru' onChange={handleChange} className=' outline outline-1 outline-gray-400 rounded-3xl w-full mx-4 px-4 py-2' required />                
                   <div className="flex flex-row justify-end items-end w-full ">
-                    <button onClick={handleSubmit} className='text-l outline outline-gray-400 outline-1 rounded-full font-medium text-[#545454] py-2 w-24 '>uruttu</button>
+                    <button onClick={handleSubmit} className='text-l outline outline-gray-400 hover:outline-purple-400 outline-1 rounded-full font-medium text-[#545454] py-2 w-24 '>uruttu</button>
                   </div>
 
               </form> : <HomeDialog relation = {relation}  handleClose = {handleClose} /> }
