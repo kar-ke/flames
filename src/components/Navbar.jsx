@@ -21,7 +21,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='flex justify-between items-center w-full h-20  lg:px-10 md:px-6 px-4 text-black bg-transparent bg-[#1d1d1d] shadow-2xl '>
+        <div className='flex justify-between items-center w-full h-20  lg:px-10 md:px-6 px-4 text-black  bg-[#1d1d1d] shadow-2xl '>
         <div>
             <h1 className="text-2xl text-white font-semibold">flames</h1>
         </div>
