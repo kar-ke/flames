@@ -21,9 +21,9 @@ const Navbar = () => {
 
 
     return (
-        <div className='flex justify-between items-center w-full h-20  lg:px-10 md:px-6 px-4 text-black bg-purple-400 '>
+        <div className='flex justify-between items-center w-full h-20  lg:px-10 md:px-6 px-4 text-black bg-transparent bg-[#1d1d1d] shadow-2xl '>
         <div>
-            <h1 className="text-2xl font-semibold">flames</h1>
+            <h1 className="text-2xl text-white font-semibold">flames</h1>
         </div>
         <ul className='hidden '>
             {links.map(({link, id}) => (
@@ -36,7 +36,7 @@ const Navbar = () => {
         </ul>
 
         <div onClick={() => setNav(!nav)} className='cursor-pointer pr-2 z-10 text-black '>
-            {nav ? <LiaTimesSolid size={30} /> : <RxHamburgerMenu size={30} />}
+            {nav ? <LiaTimesSolid size={30} /> : <RxHamburgerMenu color="white" size={30} />}
         </div>
 
         {nav && (
