@@ -7,10 +7,9 @@ import enemy from '../assets/enemy.png'
 import sister from '../assets/sister.png'
 
 
-export default function HomeDialog({relation, pngIndex,  handleClose}) {
+export default function HomeDialog({ relation,  handleClose}) {
 
   let srcImg 
-  
   if (relation === "nanbanukku koila kattu"){
     srcImg = friend
   } else if (relation === "Idhu lovvu dhan"){
@@ -25,16 +24,19 @@ export default function HomeDialog({relation, pngIndex,  handleClose}) {
     srcImg = sister
   }
 
+ 
+
 
   return (
     <div>
+     
       <div className='flex justify-end'>
         <img onClick={handleClose} className='h-4' src={close} alt='close icon'></img>
       </div>
       <div className=" flex flex-col justify-center items-center gap-5 bg-white h-full w-full ">
-          <img className='h-48 rounded-3xl' src={srcImg} alt='meme'></img>
+          <img  className='h-48 rounded-3xl' src={srcImg} alt='meme'></img>
           <p>{relation}</p>
-      </div>
+      </div>  
     </div>
   )
 }
