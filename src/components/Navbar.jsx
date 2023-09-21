@@ -11,11 +11,11 @@ const Navbar = () => {
     const links = [
         {
             id: 1,
-            link: "dummy"
+            link: "poi"
         },
         {
             id: 2,
-            link: "baava"
+            link: "polappa paaruya"
         }
     ]
 
@@ -25,7 +25,7 @@ const Navbar = () => {
         <div>
             <h1 className="text-2xl font-semibold">flames</h1>
         </div>
-        <ul className='hidden md:flex lg:flex'>
+        <ul className='hidden '>
             {links.map(({link, id}) => (
                 <li 
                 key={id} 
@@ -35,7 +35,7 @@ const Navbar = () => {
             ))}
         </ul>
 
-        <div onClick={() => setNav(!nav)} className='cursor-pointer pr-2 z-10 text-black  md:hidden lg:hidden'>
+        <div onClick={() => setNav(!nav)} className='cursor-pointer pr-2 z-10 text-black '>
             {nav ? <LiaTimesSolid size={30} /> : <RxHamburgerMenu size={30} />}
         </div>
 
