@@ -84,8 +84,8 @@ const Home = () => {
   const handleSubmit = (e ) => {
     e.preventDefault()
     getFlamesResult()
-    setOpen(true)
     setFormdata(defaultParams)
+    setOpen(true)
   }
 
   const handleClose = () => {
